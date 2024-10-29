@@ -1,0 +1,54 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Выровнено сверху */
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  padding-top: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 10px;
+  position: relative; /* Обязательно, чтобы кнопка могла быть перемещена */
+}
+
+
+.image-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin-top: 20px;
+}
+
+.image {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 25%;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+}
+
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
